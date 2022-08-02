@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Clear floats after the columns */
+.login:after{
+	content: "";
+	display: table;
+	clear: both;
+	
+}
+#login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
+	padding: 10px;
+	
+}
+
+#login .login {
+	background-color: white;
+	padding: 0px 10px;
+	
+}
+
+
+.login #fname, .login #lname, .login #userid, .login #passid, .login #rpassid {
+	width: 100%;
+}
+
+@media screen and (max-width: 450px){
+	.login > .loginright, .login > .loginleft {
+		float: none;
+		width: 100%;
+		padding: 0px;
+	}
+}

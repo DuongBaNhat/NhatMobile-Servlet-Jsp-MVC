@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.list, .staff {
+	width: 75%;
+	margin-left: 25%;
+	padding: 2%;
+}
+.list table, .staff table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.list td, th, .staff td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.list tr:nth-child(even), .staff tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.list a {
+	text-decoration: none;
+}

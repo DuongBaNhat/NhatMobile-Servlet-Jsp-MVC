@@ -1,0 +1,11 @@
+@charset "UTF-8";
+#addproduct .submit {
+	padding: 10px;
+	background-color: #717171;
+	color: white;
+	margin-top: 10px;
+	width: 100px;
+	font-size: 20px;
+	border-radius: 4px;	
+	cursor: pointer;
+}

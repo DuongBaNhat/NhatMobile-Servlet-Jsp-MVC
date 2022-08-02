@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 10px;
+	background: #f1f1f1;
+}
+
+/* /* Style the top navigation bar */
+/* .topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+Style the topnav links
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+ }  */
+
+/* Change color on hover */
+.topnav a:hover, .product-box>a:hover, .pagination a:hover, .cart a:hover,
+	.pagination .active {
+	background-color: #ddd;
+	color: black;
+}
+
+.fakeimg a:hover {
+	background-color: white;
+}
+
+label.error {
+	color: red;
+	display: block;
+}
+/* Add a card effect for articles */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 2%;
+	margin-bottom: 15%;
+}
+
+.bodyleft {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.product-box {
+	background-color: white;
+	margin: 2%;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+.product-box a, .pagination a, .cart a {
+	text-decoration: none;
+}
+
+.price {
+	color: red;
+}
+
+/* Fake image */
+.fakeimg {
+	padding: 20px;
+}
+
+.img {
+	width: 100%;
+}
+
+.title {
+	display: flex;
+	height: 30px;
+}
+
+.pagination a {
+	margin-top: 10px;
+	font-size: 11.9px;
+	display: inline-block;
+	padding: 5px 14px;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+}
+
+.pagination {
+	margin-top: 2%;
+	text-align: center;
+}
+
+/* Footer */
+.footer {
+	position: relative;
+	bottom: 0px;
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	/* margin-top: 20px; */
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-left: 5px;
+}
+
+/* Create two unequal coloumns that floats next to each other */
+/* Left column */
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+[class*="col-"] {
+	float: left;
+}
+
+.error {
+	color: red;	
+}
+
+@media screen and (min-width: 769px) {
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+}
+
+/* responsive layout - when the screen is less than 800px wide, mack the two columns stack on top of eac other isntead of next to each other */
+@media screen and (max-width: 768px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+	.col-s-1 {
+		width: 8.33%;
+	}
+	.col-s-2 {
+		width: 16.66%;
+	}
+	.col-s-3 {
+		width: 25%;
+	}
+	.col-s-4 {
+		width: 33.33%;
+	}
+	.col-s-5 {
+		width: 41.66%;
+	}
+	.col-s-6 {
+		width: 50%;
+	}
+	.col-s-7 {
+		width: 58.33%;
+	}
+	.col-s-8 {
+		width: 66.66%;
+	}
+	.col-s-9 {
+		width: 75%;
+	}
+	.col-s-10 {
+		width: 83.33%;
+	}
+	.col-s-11 {
+		width: 91.66%;
+	}
+	.col-s-12 {
+		width: 100%;
+	}
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+	[class*="col-"] {
+		float: none;
+		width: 100%;
+	}
+}

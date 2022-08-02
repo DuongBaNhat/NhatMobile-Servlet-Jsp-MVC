@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.pay {
+	text-align: center;
+	background-color: white;
+	height: 200px;
+	width: 50%;
+}
+
+@media screen and (max-width: 450px) {
+	.pay .content {
+		width: 100%;
+		padding: 0;
+	}
+}

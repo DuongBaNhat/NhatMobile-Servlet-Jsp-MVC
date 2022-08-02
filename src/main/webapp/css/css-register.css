@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.login .loginright input {
+	width: 100% ;
+}
+.login .loginright .submits {
+	width: 25%;
+	padding: 5px;
+}

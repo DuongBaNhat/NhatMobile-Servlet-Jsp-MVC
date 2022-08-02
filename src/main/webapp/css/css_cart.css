@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
+	padding: 10px;
+}
+
+#cart .cart {
+	background-color: white;
+	width: 50%;
+}
+
+#cart .flex-cart {
+	padding: 2%;
+}
+
+#cart table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 1%;
+}
+
+#cart td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+#cart tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+#cart .pay {
+	display: block;
+	margin-top: 2%;
+	padding: 2%;
+	border: solid 1px #FB6E2E;
+	background-color: #FB6E2E;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#cart .pay:hover {
+	color: white;
+	border: solid 1px #FB6E2E;
+	background-color: #ea5940;
+}
+
+#cart input {
+	width: 100%;
+	padding: 2%;
+	font-size: 17px;
+}
+
+#cart .value {
+	border: none;
+	width: 40px !important;
+}
+
+#cart .number {
+	width: 10%;
+}
+
+#cart .plus, .minus {
+	display: block;
+	padding: 10px;
+	border: solid 0.5px;
+	cursor: pointer;
+}
+
+#cart .number input {
+	text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+	#cart .cart, #cart {
+		width: 100%;
+	}
+	#cart .tableproduct {
+		position: relative;
+		padding: 2px !important;
+		width: 100%;
+		font-size: 8px !important;
+	
+	}
+	#cart .tableproduct td {
+		padding: 2px !important;
+	}
+}
+@media screen and (max-width: 800px) and (min-width: 451px){
+	
+	#cart .tableproduct {
+		position: relative;
+		width: 100%;
+		padding: 2px !important;
+		font-size: 10px !important;
+	}
+	#cart .tableproduct td {
+		padding: 2px !important;
+	}
+}

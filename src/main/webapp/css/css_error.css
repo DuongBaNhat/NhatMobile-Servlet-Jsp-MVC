@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#error {
+	display: flex;
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+
+}
+
+#error .content-box {
+	width: 50%;
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+
+@media screen and (min-width: 768px){
+	#error {
+		min-height: 300px
+	}
+} 	
+

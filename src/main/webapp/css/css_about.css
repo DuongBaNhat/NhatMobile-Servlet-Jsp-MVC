@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#about {
+	display: flex;
+	min-height: 320px;
+	justify-content: center;
+	align-items: center;
+}
+
+#about .content-box {
+	background-color: white;
+	padding: 40px;
+}
